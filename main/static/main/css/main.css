@@ -1,0 +1,954 @@
+/*Обнуляющие стили*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*___________________________________________________*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Общие элементы */
+.block-title{
+    margin-bottom: 70px;
+    color: #3444B8;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    text-align: center;
+}
+/* ____________________ */
+.preview{
+    background: url('../img/Group 732.svg') no-repeat;
+    background-size: cover
+    
+}
+
+.logo{
+    margin-top: 80px;
+}
+
+.content-type__title{
+    color:#FFFFFF;
+    font-size:46px;
+    font-weight: 900;
+    margin: 88px 0 60px 0;
+    line-height: 69px;
+}
+
+.main-btn button{
+    border: none;
+    background-color: #5B98E3;
+    color: #FFFFFF;
+    border-radius: 9px;
+    width: 305px;
+    height: 69px;
+    font-weight: 700;
+}
+
+.content__image img {
+    position: absolute;
+    top: 10em;
+    height: 379.8px;
+    margin-left: -105px;
+}
+
+.content-description{
+    margin: 139px 0 42px 0;
+    display: flex;
+}
+
+.content-description__title{
+    margin: auto 0;
+    font-weight: 700;
+    font-size: 14px;
+    
+    color: #FFFFFF;
+}
+
+.content-description__about{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 36px;
+}
+
+.sponsors{
+    height:100%;
+    background: linear-gradient(89.95deg, #211EAA 0.04%, #3648B9 99.96%);
+    
+}
+
+.sponsors-blocks{
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.info-block, .help-block{
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+
+.orgName{
+    display: flex;
+    margin-top: 23px;
+    justify-content: space-between;
+    float: left;
+}
+
+
+.title{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.info-block__item{
+    width: 100%;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.9px;
+    margin-right: 30px;
+    
+    
+}
+
+/* Olimpiada description */
+.cont-desc{
+    display: flex;
+    flex-wrap: wrap;
+}
+.desc_olimp{
+    background-color: #FFFFFF;
+    padding-bottom: 70px;
+}
+.desc-olimp__title{
+    width: 1109px
+}
+
+.desc-olimp__title p{
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 70px 0 37px 0;
+    color: #2A30B1;
+}
+.desc-olimp__colItem{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.desc-olimp__item{
+    width: 540px;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2A30B1;
+}
+
+.desc-olimp__subitem {
+    width: 255px;
+}
+.desc-olimp__subitem p{
+    width: 100%;
+    margin-right: 30px; 
+}
+
+.block-description{
+    display: flex;
+}
+.desc-olimp__sub{
+    display: flex;
+    
+}
+.desc-olimp__subitem{
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2A30B1;
+}
+
+
+.aim-item{
+    position: relative;
+    margin-top: 73px;
+    width: 625px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 64px 0px #BEC8F5;
+}
+.nav-aim__block{
+    width: 945px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item button{
+    padding: 0 0;
+}
+.nav-link{
+    font-family: 'PT Sans', sans-serif;
+    color: #2F185F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+hr{
+    color: #2A30B1;
+    background-color: #2A30B1;
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin-top:-1px ;
+}
+
+.nav-link:focus{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    border-color: #2A30B1;
+    border-bottom: solid 3px;
+}
+
+.nav-link:hover{
+    font-weight: 700;
+    color: #2A30B1;
+}
+.tab-content{
+    display: flex;
+    justify-content: center;
+}
+.aim-item__img{
+    position: absolute;
+    top: -35px;
+    left: -17px;
+}
+
+.aim-item__title{
+    padding-top: 19px;
+    color: #2F185F;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33.6px;
+    text-align: center;
+}
+
+.aim-item__desc{
+    margin-top: 13px;
+    padding-bottom: 29px;
+    color: #2F185F;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+/* Comitet */
+.card-emp{
+    margin: 0 auto;
+    width: 1140px;
+}
+.comitet-block{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.photo img{
+    height: 180px;
+}
+.photo{
+    height: 100%;
+    border-radius: 10px;
+}
+.block-item{
+    text-align: center;
+    width: 254px;
+    margin: 0 15px 70px 15px;
+}
+.block-item__info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block-item__title{
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #201EAA;
+}
+.block-item__about{
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #191773;
+}
+
+/* Galery */
+.galery{
+    padding-bottom: 70px;
+}
+.photogalery img{
+    float:left;
+}
+
+/* Contacts */
+
+.block{
+    display: flex;
+}
+
+.block-1{
+    background-color: #4340C9;
+    width: 65%;
+    height: 234px;
+    
+    padding: 70px 90px 0 160px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block-2{
+    padding-top: 70px;
+    background-color: #0A72ED;
+    width: 35%;
+    height: 234px;
+}
+
+.adress{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 31.5px;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+.tochka{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+.block-data{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    
+    
+}
+
+.number{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.email{
+    color: #ACD2FF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    
+}
+
+
+/* Page registration */
+
+.reg-page{
+    height: 100vh;
+}
+.reg-title {
+    padding-bottom: 64px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 45px 0 64px 0;
+    font-size: 42px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.block-form{
+    width: 100%;
+}
+.form-reg{
+    position: relative;
+    margin-left: 96px;
+}
+.form-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-input__title{
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+}
+.form-input__input {
+    margin:0 0 41px 30px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+}
+.form-input__cont{ 
+    max-width: 635px;
+}
+
+.btn-reg{
+    margin-left: 30px;
+    width: 343px;;
+}
+.btn-reg button{
+    border: none;
+    background-color: #5B98E3;
+    color: #FFFFFF;
+    border-radius: 9px;
+    height: 69px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 44px;
+    
+}
+
+
+/* Медиа-запросы (Страница регистрации) */
+
+@media (max-width:1200px){
+    .form-reg{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:1000px){
+    .reg-title{
+        padding-bottom: 0px;
+        font-size: 28px;
+    }
+    .form-input__title{
+        font-size: 16px;
+        max-width: 100%;
+        padding-bottom: 10px; 
+    }
+    .form-input__input{
+        margin: 0px 0px 41px 30px;
+    }
+    .btn-reg button{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:767px){
+    .logo{
+        text-align: center;
+    }
+    .reg-title{
+        text-align: center;
+        line-height: 30px;
+    }
+    .block-form{
+        position: absolute;
+        left: 50%;
+        transform: translate(-40%, 0);
+        max-width: 100%;
+        
+    }
+    .form-input{
+        display:inline-table;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    .form-input__title{
+        width: 200%;
+        max-width: 360px;
+        font-size: 16px;
+    }
+    .form-input__input{
+        margin-left: 0;  
+    }
+    .btn-reg{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:365px){
+    .form-input {
+        
+    }
+    .form-input__title{
+        font-size: 16px;
+        width: 300%;
+    }
+    .form-input__input{
+        margin: 0 0 31px 0;
+        padding: 0 0 0 10px;
+        font-size: 14px;
+    }
+    .btn-reg{
+        width: 100%;
+        margin: 41px 0 0 0;
+    }
+}
+
+/* Медиа-запросы (Страница Главная) */
+
+/* Preview - Стартовый хэдэр*/
+@media (max-width:1400px) {
+    .content-type__title{
+        font-size: 36px;
+        line-height: 49px;
+    }
+    .orgName{
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width:1199px) {
+    .content__image img {
+        width: auto;
+        max-height: 25%;
+        margin: 45px 0 0 -45px;
+    } 
+}
+@media (max-width:991px) {
+    .content-type__title{
+        font-size: 26px;
+        line-height: 39px;
+    }
+    .content__image img {
+        width: auto;
+        max-height: 20%;
+        margin: 73px 0 0 -46px;
+    }
+    .content-description__title{
+        line-height: 18px;
+    }
+    .main-btn button{
+        font-size: 16px;
+        width: 280px;
+    }
+    .orgName{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-block{
+        margin-right: 50px;
+    }
+    .info-block__item{
+        width: 100%;
+        line-height: 17px;
+        padding-bottom: 12px;
+    }
+}
+@media (max-width:767px) {
+    .logo{
+        text-align: center;
+    }
+    .content-type__title{
+        width: 130%;
+        font-size: 22px;
+    }
+    .content__image img {
+        min-width:100%;
+        margin: 0px 0 0 0px;
+        position: relative;
+        top: 2em
+    }
+    .main-btn{
+        position: relative;
+    }
+    .main-btn button{
+        position: absolute;
+        top: -150px;
+        font-size: 16px;
+        width: 220px;
+    }
+    .content-description__title{
+        width: 100%;
+    }
+    .content-description{
+        text-align: center;
+    }
+    .orgName{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .info-block{
+        margin-right: 50px;
+    }
+    .info-block__item{
+        width: 100%;
+        line-height: 17px;
+        padding-bottom: 12px;
+    }
+}
+@media (max-width:465px) {
+    .media-req{
+        display: flex;
+        
+    }
+    .content-type__title{
+        padding-top: 80px;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 88px 0 40px 0;
+    }
+    .main-btn button{
+        position: absolute;
+        top: 50px;
+        
+        width: 100%;
+        height: 4em;
+        line-height: 20px;
+    }
+    .content-description{
+        display: inline-block;
+    }
+    .content-description__title{
+        padding-bottom: 15px;
+    }
+    .content-description__about{
+        margin: 0;
+    }
+}
+@media (max-width:389px) {
+    .content-type__title{
+        width: 110%;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 30px 0 40px 0;
+    }
+    .main-btn{
+
+    }
+    .main-btn button{
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        height: 4em;
+        line-height: 20px;
+    }
+    .content__image img {
+        width: 80px;
+        height: auto;
+        min-width:100%;
+        margin: 200px 0 0 0px;
+        position: absolute;
+        
+    }
+}
+@media (max-width:363px) {
+    .main-btn button{
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        height: 4em;
+        line-height: 20px;
+        top: 15px;
+    }
+    .content__image img {
+        width: 80px;
+        height: auto;
+        min-width:100%;
+        margin: 200px 0 0 0px;
+        position: absolute;
+        
+    }
+    .content-description{
+        margin: 110px 0 42px 0;
+    }
+    .sponsors-blocks{
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .info-block{
+        word-spacing: 2px;
+        margin: 40px 0 0 0;
+        text-align: center;
+    }
+    .help-block{
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+
+}
+
+/* Desc - Описание*/
+@media (max-width:1200px) {
+    .block-description{
+        padding-bottom: 55px;
+    }
+    .desc-olimp__title{
+        width: 100%;
+    }
+    .desc-olimp__title p{
+        font-size: 26px;
+    }
+    .desc-olimp__item{
+        font-size: 18px;
+        text-align: justify;
+    }
+    .desc-olimp__sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .desc-olimp__sub p{
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    .desc-olimp__subitem{
+        width: 438px;
+        margin: 0;
+        text-align: justify;
+    }
+}
+@media (max-width:991px) {
+    .desc-olimp__title{
+        
+        text-align: justify;
+    }
+    .desc-olimp__subitem{
+        width: 318px;
+    }
+}
+@media (max-width:767px) {
+    .desc-olimp__title{
+        text-align: center;
+    }
+    .desc-olimp__subitem{
+        width: 228px;
+    }
+}
+@media (max-width:551px) {
+    .desc-olimp__title p{
+        font-weight: 600;
+        line-height: 23px;
+        font-size: 18px;
+        margin: 50px 0 30px 0;
+    }
+    .desc-olimp__item{
+        text-align: center;
+        margin: 0 15px 30px 15px; 
+    }
+    .desc-olimp__subitem{
+        text-align: center;
+        margin: 0 15px 30px 15px;
+        width: 189%;
+    }
+   
+    .block-description{
+        display: block;
+        width: 200%;
+    }
+
+}
+
+/* Aims - Цели */
+@media (max-width:1200px) {
+    .block-title{
+        font-size: 36px;
+    }
+    .nav{
+        text-align: justify;
+    }
+    .nav li{
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+}
+@media (max-width:991px) {
+    hr{
+        display: none;
+    }
+    .nav-link{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:767px) {
+    
+    .tab-content{
+        width: 540px;
+    }
+    .aim-item{
+        width: 100%;
+    }
+    .aim-item__desc{
+        margin: 10px 15px 0 15px;
+        height: 100%;
+    }
+}
+@media (max-width:390px) {
+    .aim-item__img{
+    
+    top: -65px;
+    left: -7px;
+}
+
+}
+
+
+/* Comitet - Программный комитет олимпиады */
+
+@media (max-width:1199px) {
+    .card-emp{
+        width: 100%;
+    }
+    .comitet {
+        width: 100%;
+    }
+    .comitet-block{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 425px){
+    .block-title{
+        font-size: 32px;
+    } 
+}
+
+/* Galery -  Фотогалерея */
+@media (min-width:1440px) {
+    .galery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}
+@media (max-width:1439px) {
+    .galery{
+        display: none;
+    }
+    
+}
+
+/* Contacts - Контакты */
+
+@media (max-width:1199px) {
+    .block{
+        width: 100%;
+    }
+    .block-1{
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        
+        width: 100%;
+    }
+    .block-2{
+        width: 100%;
+    }
+    .block-info{
+        padding-top: 70px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .name{
+        padding-top: 10px;
+    }
+    .tochka{
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:1030px) {
+    .block-info{
+        padding-top: 45px;
+        width: 85%;
+    }
+
+}
+@media (max-width:673px) {
+    .block-info{
+        padding-top: 45px;
+        width: 95%;
+    }
+    .adress{
+        font-size: 18px;
+    }
+    .name,.tochka{
+        font-size: 14px;
+    }
+    .number{
+        font-size: 26px;
+    }
+}
+@media (max-width:595px) {
+    .block{
+        display: inline-block;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    <title>Регистрация</title>
+{% endblock %}
+
+{% block content %}
+<section class="preview">
+    <div class="reg-page">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo">
+                            <a href="{% url 'home' %}"><img src="../static/main/img/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="reg-title">
+                        <h1>Регистрация участия</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="block-form">
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        <span>{{ error }}</span>
+                        <div class="form-reg">
+                            <div class="col-12">
+                                <div class="form-input ">
+                                    <div class="col-3">
+                                        <div class="form-input__title">ФИО</div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="form-input__cont">{{ form.name }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-input">
+                                    <div class="col-3">
+                                        <div class="form-input__title">Наименование учебного заведения</div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="form-input__cont">{{ form.title_univer }}</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-input">
+                                    <div class="col-3">
+                                        <div class="form-input__title">Телефон</div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="form-input__cont">{{ form.phone }}</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-input">
+                                    <div class="col-3">
+                                        <div class="form-input__title">E-mail</div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="form-input__cont">{{ form.email }}</div>
+                                        <div class="row">
+                                            <div class="btn-reg">
+                                                <a href="#"><button>Зарегистрироваться</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+{% endblock %}
+

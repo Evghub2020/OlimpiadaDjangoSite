@@ -1,0 +1,366 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+{% block preview_info %}
+<section class="preview">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="logo">
+                        <a href="{% url 'home' %}"><img src="../static/main/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="content">
+                    <div class="content-type">
+                        <div class="content-type__title">
+                            <h1>Международная <br> научно-практическая онлайн-олимпиада</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="content__image">
+                    <img src="../static/main/img/header-img.png" alt="header-img">
+                </div>
+            </div>
+        </div>
+        <div class="main-btn">
+            <a href="{% url 'reg' %}"><button>Принять участие</button></a>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="desc">
+                    <div class="content-description">
+                        <div class="content-description__title">
+                            <p>Место проведения онлайн-олимпиады:</p>
+                        </div>
+                        <div class="content-description__about">
+                            <p>Ростовский государственный экономический университет (РИНХ), 
+                            Точка кипения РГЭУ (РИНХ) <br> г. Ростов-на-Дону, ул. Б. Садовая, 69 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="sponsors-blocks">
+                    <div class="info-block">
+                        <p class="title">Соорганизаторы:</p>
+                        <div class="orgName">
+                            
+                                <div class="info-block__item">
+                                    <p>Ростовский государственный экономический университет (РИНХ)</p>
+                                </div>
+                            
+                                <div class="info-block__item">
+                                    <p>Федеральная<br>служба по финансовому мониторингу</p>
+                                </div>
+                            
+                                <div class="info-block__item">
+                                    <p>Международный учебно-методичес<br>кий центр финансового мониторинга</p>
+                                </div>
+                            
+                                <div class="info-block__item">
+                                    <p>Международный сетевой институт в сфере ПОД/ФТ</p>
+                                </div>
+                            
+                                <div class="info-block__item">
+                                    <p>Ростовское региональное отделение Вольного экономического общества России</p>
+                                </div>
+                            
+                        </div>
+                    </div>   
+                    <div class="help-block ">
+                        <p class="title">при поддержке</p>
+                        <div class="orgName">
+                            
+                                <div class="info-block__item">
+                                    <p>Аппарата полномочного представителя Президента РФ в Южном федеральном округе</p>
+                                </div>
+                            
+                                <div class="info-block__item">
+                                    <p>Правительства Ростовской <br> области</p>
+                                </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock preview_info %}
+
+{% block desc_olimp %}
+    <section class="desc_olimp">
+        <div class="container">
+            <div class="row">
+                <div class="cont-desc">
+                    <div class="col-12">
+                        <div class="desc-olimp__title">
+                            <p>Олимпиада включает два этапа, проводимые в заочной форме с применением дистанционных образовательных технологий:</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="block-description">
+                            <div class="col-6">
+                                <div class="desc-olimp__colItem">
+                                    <div class="desc-olimp__item">
+                                        <p>Первый этап представляет собой отборочный тур и предполагает выполнение индивидуальных тестовых заданий. Все участники первого этапа Олимпиады получают Сертификат установленного образца.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="desc-olimp__colItem">
+                                    <div class="desc-olimp__item">
+                                        <p>Второй этап к участию допускаются участники Первого этапа Олимпиады, набравшие наибольшее количество баллов. Второй этап предполагает выполнение индивидуальных тестовых заданий повышенного уровня сложности и решение кейс-задания.</p>
+                                    </div>
+                                    <div class="desc-olimp__sub">
+                                        <div class="col-6">
+                                            <div class="desc-olimp__subitem">
+                                                <p>Победители Второго этапа Олимпиады получают Дипломы Победителей (1-е, 2-е и 3-е место).</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="desc-olimp__subitem">
+                                                    <p>Участники, набравшие наибольшее количество баллов после победителей, получают Дипломы Лауреатов.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="block-title">Цели</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="nav-aim__block">
+                    <ul class="nav" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-tvor-tab" data-bs-toggle="pill" data-bs-target="#pills-tvor" type="button" role="tab" aria-controls="pills-tvor" aria-selected="true">Творческие способности</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-child-tab" data-bs-toggle="pill" data-bs-target="#pills-child" type="button" role="tab" aria-controls="pills-child" aria-selected="false">Одаренные дети</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-znaniya-tab" data-bs-toggle="pill" data-bs-target="#pills-znaniya" type="button" role="tab" aria-controls="pills-znaniya" aria-selected="false">Научные знания</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-prof-tab" data-bs-toggle="pill" data-bs-target="#pills-prof" type="button" role="tab" aria-controls="pills-prof" aria-selected="false">Профессиональная ориентация</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-molod-tab" data-bs-toggle="pill" data-bs-target="#pills-molod" type="button" role="tab" aria-controls="pills-molod" aria-selected="false">Талантливая молодежь</button>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" class="cont-aim" id="pills-tvor" role="tabpanel" aria-labelledby="pills-tvor-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="aim-item">
+                                        <img class="aim-item__img" src="../static/main/img/aim_img.png" alt="aim_img">
+                                        <div class="aim-item_block">
+                                            <p class="aim-item__title">Творческие способности</p>
+                                            <p class="aim-item__desc">Выявление и развитие у учащихся, осваивающих<br>общеобразовательные программы основного общего и среднего<br>общего образования, творческих способностей и интереса к<br>научно-исследовательской деятельности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-child" role="tabpanel" aria-labelledby="pills-child-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="aim-item">
+                                        <img class="aim-item__img" src="../static/main/img/aim_img.png" alt="aim_img">
+                                        <div class="aim-item_block">
+                                            <p class="aim-item__title">Одаренные дети</p>
+                                            <p class="aim-item__desc">Выявление и развитие у учащихся, осваивающих<br>общеобразовательные программы основного общего и среднего<br>общего образования, творческих способностей и интереса к<br>научно-исследовательской деятельности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-znaniya" role="tabpanel" aria-labelledby="pills-znaniya-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="aim-item">
+                                        <img class="aim-item__img" src="../static/main/img/aim_img.png" alt="aim_img">
+                                        <div class="aim-item_block">
+                                            <p class="aim-item__title">Научные знания</p>
+                                            <p class="aim-item__desc">Выявление и развитие у учащихся, осваивающих<br>общеобразовательные программы основного общего и среднего<br>общего образования, творческих способностей и интереса к<br>научно-исследовательской деятельности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-prof" role="tabpanel" aria-labelledby="pills-prof-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="aim-item">
+                                        <img class="aim-item__img" src="../static/main/img/aim_img.png" alt="aim_img">
+                                        <div class="aim-item_block">
+                                            <p class="aim-item__title">Профессиональная ориентация</p>
+                                            <p class="aim-item__desc">Выявление и развитие у учащихся, осваивающих<br>общеобразовательные программы основного общего и среднего<br>общего образования, творческих способностей и интереса к<br>научно-исследовательской деятельности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-molod" role="tabpanel" aria-labelledby="pills-molod-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="aim-item">
+                                        <img class="aim-item__img" src="../static/main/img/aim_img.png" alt="aim_img">
+                                        <div class="aim-item_block">
+                                            <p class="aim-item__title">Талантливая молодежь</p>
+                                            <p class="aim-item__desc">Выявление и развитие у учащихся, осваивающих<br>общеобразовательные программы основного общего и среднего<br>общего образования, творческих способностей и интереса к<br>научно-исследовательской деятельности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+{% endblock desc_olimp %}
+
+{% block comitet %}
+<section class="comitet">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="block-title">Программный комитет олимпиады</h1>
+            </div>
+        </div>
+        <div class="card-emp">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="comitet-block">
+                        {% if emp %}
+                            {% for el in emp %}
+                                <div class="block-item">
+                                    <div class="block-item__picture">
+                                        <div class="photo">
+                                            <img src="{{ el.emp_img.url }}" alt="photo">
+                                        </div>
+                                    </div>
+                                    <div class="block-item__info">
+                                        <div class="block-item__title">
+                                            <p>{{ el.name }}</p>
+                                        </div>
+                                        <div class="block-item__about">
+                                            {{ el.about }}
+                                        </div>
+                                    </div>
+                                </div>  
+                            {% endfor %}
+                        {% else %}
+                            <p class="block-title">Нет данных о сотрудниках</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock comitet %}
+
+{% block galery %}
+    <section class="galery">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="block-title">Фотогалерея</div>
+                </div>
+            </div>
+        </div>
+        <div class="photogalery">
+            <img src="../static/main/img/galery1.jpg" alt="photo">
+            <img src="../static/main/img/galery2.jpg" alt="photo">
+            <img src="../static/main/img/galery3.jpg" alt="photo">
+            <img src="../static/main/img/galery2.jpg" alt="photo">
+            <img src="../static/main/img/galery3.jpg" alt="photo">
+
+            <img src="../static/main/img/galery2.jpg" alt="photo">
+            <img src="../static/main/img/galery3.jpg" alt="photo">
+            <img src="../static/main/img/galery2.jpg" alt="photo">
+            <img src="../static/main/img/galery3.jpg" alt="photo">
+            <img src="../static/main/img/galery1.jpg" alt="photo">
+
+            <img src="../static/main/img/galery1.jpg" alt="photo">
+            <img src="../static/main/img/galery2.jpg" alt="photo">
+            <img src="../static/main/img/galery3.jpg" alt="photo">
+            <img src="../static/main/img/galery2.jpg" alt="photo">
+            <img src="../static/main/img/galery3.jpg" alt="photo">
+        </div>
+    </section>
+{% endblock galery %}
+
+{% block contacts %}
+<section class="contacts" >
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contacts-title block-title">
+                    Контакты
+                </div>
+            </div>
+        </div>
+    </div>
+    <span>
+        <div class="block">
+            <div class="block-1">
+                <div class="block-info">
+                    <p class="adress">г. Ростов-на-Дону, ул. Б. Садовая, 69</p>
+                    <p class="name">Ростовский государственный экономический университет (РИНХ)</p>
+                    <p class="tochka">Точка кипения РГЭУ (РИНХ)</p>
+                </div>
+            </div>
+            <div class="block-2">
+                <div class="block-data">
+                    <p class="number">+7 (863) 345-40-40</p>
+                    <p class="email">fnauka@bk.ru</p>
+                </div>
+            </div>
+        </div>
+    </span>
+</section>
+{% endblock contacts %}
+
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8fc1d4da6d32e374e7c7c5e08ae9587d6386faacd70fc20fe74c8f16c638b259&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=true"></script>
+
+{% endblock content %}
